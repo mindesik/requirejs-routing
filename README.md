@@ -24,7 +24,7 @@ require(['app'], function () {
         
         // Load foo script for /bar page and then load bar script through callback function
         app.require(['/bar'], ['foo'], function () {
-            app.require(['*'], ['bar']);
+            app.require(['bar']);
         });
         
         // Require bar script on all /foo/* pages
