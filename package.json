@@ -1,0 +1,24 @@
+{
+  "name": "requirejs-routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://misterpaladin@github.com/misterpaladin/requirejs-routing.git"
+  },
+  "author": "Eugene Min",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misterpaladin/requirejs-routing/issues"
+  },
+  "homepage": "https://github.com/misterpaladin/requirejs-routing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.2",
+    "gulp-util": "^3.0.7"
+  }
+}
