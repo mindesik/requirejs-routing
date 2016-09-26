@@ -1,4 +1,13 @@
-## Usage
+## Requirejs with routing
+
+### build
+
+```
+$ npm install
+$ gulp
+```
+
+### Use
 
 Require `app.js` with requirejs, use `app` function to create new App instance and define routes in callback:
 
