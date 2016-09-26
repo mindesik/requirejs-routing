@@ -1,6 +1,8 @@
 ## Requirejs with routing
 
-### build
+This script allow you to use requirejs depending on routes.
+
+### Build
 
 ```
 $ npm install
