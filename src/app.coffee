@@ -38,25 +38,25 @@ class App
             init this
             
 ###
-# Require scripts for specific pages
-# @param  {Array} pages       [Array of page urls]
+# Require scripts for specific routes
+# @param  {Array} routes       [Array of page urls]
 # @param  {Array} scripts     [Array of dependencies]
 # @param  {Function} callback [Callback function]
 # @return {void}
 ###
-App::require = (pages, scripts, callback) ->
-    if typeof callback == 'undefined'
-        callback = ->
-    
+App::require = (routes, scripts, callback) ->
     # If first parameter is not present
     if typeof scripts == 'function'
         callback = scripts
-        scripts = pages
-        pages = [ '*' ]
+        scripts = routes
+        routes = [ '*' ]
+    
+    if typeof callback == 'undefined'
+        callback = ->
     
     current = trimSlashes(window.location.pathname)
-    for i of pages
-        path = trimSlashes(pages[i])
+    for i of routes
+        path = trimSlashes(routes[i])
         if startsWith(path, current)
             require scripts, callback.bind(this)
 
