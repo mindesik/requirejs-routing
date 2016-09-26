@@ -9,7 +9,7 @@ $ gulp
 
 ### Use
 
-Require `app.js` with requirejs, use `app` function to create new App instance and define routes in callback:
+Create script named `app.website.js`, require `app.js` with requirejs, use `app` function to create new App instance and define routes in callback:
 
 ```javascript
 require(['app'], function () {
@@ -29,4 +29,10 @@ require(['app'], function () {
         app.require(['/foo/*'], ['bar']);
     });
 });
+```
+
+And finally include it in your page:
+
+```html
+<script data-main="/js/app.website" src="/js/require.js"></script>
 ```
